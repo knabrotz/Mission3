@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- favicon links -->
+    <link rel="shortcut icon" href="https://freepngimg.com/save/26729-sunshine-transparent/908x791" type="image/x-icon" />
+    <link rel="icon" href="https://freepngimg.com/save/26729-sunshine-transparent/908x791" type="image/x-icon" />
+
+
+    <!--Styles (Bootstrap and Custom CSS) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../css/default.css" rel="stylesheet" />
+
+    <!--jquery and bootstrap js files-->
+    <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Keanna Nabrotzky</h1>
+        <nav>
+            <a asp-controller="Homepages" asp-action="Index">Home</a> |
+            <a asp-controller="Homepages" asp-action="Calculator">Grade Calculator</a>
+        </nav>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    
+    
+
+</body>
+
+</html>
