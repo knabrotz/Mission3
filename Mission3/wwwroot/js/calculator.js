@@ -1,10 +1,11 @@
 ﻿$("#calcButton").click(function () {
 
-    // Pulls inputted grade values from form and determines weighted grade
     if (($("#assignments").val() > 100) || ($("#groupproject").val() > 100) || ($("#quizzes").val() > 100) || ($("#exams").val() > 100) || ($("#intex").val() > 100)) {
         alert("Grade values must be less than 100");
         return;
     };
+
+    // Pulls inputted grade values from form and determines weighted grade
 
     let grade = (
         ($("#assignments").val() * .55) +
